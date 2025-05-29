@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventory Label Generator</title>
     <style>
@@ -71,33 +72,33 @@
         </div>
         <div class="label-container">
             <table class="label-table">
-                <tbody><tr>
+                <tr>
                     <td>Part Number (PN):</td>
-                    <td id="label-pn">005724</td>
+                    <td id="label-pn"></td>
                 </tr>
                 <tr>
                     <td>Date:</td>
-                    <td id="label-date">2025-05-29</td>
+                    <td id="label-date"></td>
                 </tr>
                 <tr>
                     <td>Quantity:</td>
-                    <td id="label-quantity">25</td>
+                    <td id="label-quantity"></td>
                 </tr>
                 <tr>
                     <td>Supplier:</td>
-                    <td id="label-supplier">Scanfil</td>
+                    <td id="label-supplier"></td>
                 </tr>
                 <tr>
                     <td>PO #:</td>
-                    <td id="label-po">25000000</td>
+                    <td id="label-po"></td>
                 </tr>
-            </tbody></table>
+            </table>
             <div class="barcode-container">
-                <svg id="barcode" width="156px" height="90px" x="0px" y="0px" viewBox="0 0 156 90" xmlns="http://www.w3.org/2000/svg" version="1.1" style="transform: translate(0,0)"><rect x="0" y="0" width="156" height="90" style="fill:#ffffff;"></rect><g transform="translate(10, 10)" style="fill:#000000;"><rect x="0" y="0" width="4" height="50"></rect><rect x="6" y="0" width="2" height="50"></rect><rect x="12" y="0" width="6" height="50"></rect><rect x="22" y="0" width="4" height="50"></rect><rect x="28" y="0" width="4" height="50"></rect><rect x="36" y="0" width="4" height="50"></rect><rect x="44" y="0" width="6" height="50"></rect><rect x="52" y="0" width="4" height="50"></rect><rect x="58" y="0" width="2" height="50"></rect><rect x="66" y="0" width="6" height="50"></rect><rect x="74" y="0" width="2" height="50"></rect><rect x="80" y="0" width="4" height="50"></rect><rect x="88" y="0" width="2" height="50"></rect><rect x="94" y="0" width="8" height="50"></rect><rect x="106" y="0" width="2" height="50"></rect><rect x="110" y="0" width="4" height="50"></rect><rect x="120" y="0" width="6" height="50"></rect><rect x="128" y="0" width="2" height="50"></rect><rect x="132" y="0" width="4" height="50"></rect><text style="font: 18px monospace" text-anchor="middle" x="68" y="70">005724</text></g></svg>
+                <svg id="barcode"></svg>
             </div>
         </div>
     </div>
-    <script src="./Inventory Label Generator_files/JsBarcode.all.min.js.download"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
     <script>
         function updateLabel() {
             document.getElementById('label-pn').textContent = document.getElementById('pn').value;
@@ -114,6 +115,5 @@
             });
         }
     </script>
-
-
-</body></html>
+</body>
+</html>
